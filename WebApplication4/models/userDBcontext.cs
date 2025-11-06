@@ -18,5 +18,8 @@ namespace WebApplication4.models
         }
         public DbSet<User> Users { get; set; }
         public DbSet<PasswordReset> PasswordResets { get; set; }
+
+        public DbSet<signupp> signupps {  get; set; }
     }
 }
+    
