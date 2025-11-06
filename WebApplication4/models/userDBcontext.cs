@@ -7,6 +7,7 @@ namespace WebApplication4.models
         public UserDBcontext(DbContextOptions<UserDBcontext> options) : base(options)
         {
         }
+        //a
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<PasswordReset>()
