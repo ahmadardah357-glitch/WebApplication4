@@ -14,7 +14,7 @@ namespace WebApplication4.models
         public string Emailaddress { get; set; }  
         [Required]
         [MaxLength(50)]
-        public string Password { get; set; }
+        public byte[] PasswordHash { get; set; }
     }
 
     [Table("signupp")]
@@ -39,7 +39,7 @@ namespace WebApplication4.models
 
         [Required(ErrorMessage = "كلمة المرور مطلوبة")]
         [StringLength(50, MinimumLength = 6, ErrorMessage = "كلمة المرور يجب أن تكون 6 أحرف على الأقل")]
-        public string Password { get; set; }
+        public byte[] PasswordHash { get; set; }
 
         [Required(ErrorMessage = "نوع المستخدم مطلوب")]
         [StringLength(20)]
